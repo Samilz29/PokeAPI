@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* FONDO: Gris oscuro azulado (Slate 900) */
+    background-color: rgb(15, 23, 42); 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* TEXTO: Gris muy claro, casi blanco */
+    color: rgb(226, 232, 240);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 3em;
+    /* SOMBRA: Negra para dar profundidad al título */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#inputPkm {
+    padding: 10px;
+    font-size: 1.2em;
+    /* INPUT: Fondo oscuro con borde sutil */
+    background-color: rgb(30, 41, 59);
+    border: 2px solid rgb(71, 85, 105);
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Cuando haces click en el input, el borde se ilumina */
+#inputPkm:focus {
+    outline: none;
+    border-color: rgb(59, 130, 246);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    /* BOTÓN: Azul Eléctrico (Moderno) */
+    background-color: rgb(37, 99, 235);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    /* HOVER: Azul más brillante y se levanta un poco */
+    background-color: rgb(59, 130, 246);
+    transform: translateY(-2px);
+}   
+
+#outputPkm {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pkm-card {
+    /* TARJETA: Un tono más claro que el fondo para que "flote" */
+    background: rgb(30, 41, 59);
+    padding: 16px;
+    border-radius: 10px;
+    /* BORDE: Muy sutil para definir la tarjeta */
+    border: 1px solid rgb(51, 65, 85);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 1000px;
+}
+
+.pkm-card h2 {
+    margin: 0;
+    text-transform: capitalize;
+    /* TÍTULO POKEMON: Blanco brillante */
+    color: rgb(248, 250, 252);
+    letter-spacing: 1px;
+}
+
+.infoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.pkm-img {
+    width: 150px;
+    image-rendering: pixelated;
+    /* EFECTO: Un brillo sutil detrás del pokemon principal */
+    filter: drop-shadow(0 0 10x rgba(255, 255, 255, 0.2));
+}
+
+.stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.stat {
+    margin: 0;
+    /* STATS: Fondo más oscuro ("hundido") */
+    background: rgb(15, 23, 42);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    border: 1px solid rgb(51, 65, 85);
+}
+
+.stat strong {
+    /* VALORES: Azul claro cyan para resaltar */
+    color: rgb(56, 189, 248);
+}
+
+.shiny-btn, .evoShinyBtn {
+    padding: 6px 12px;
+    margin-top: 4px;
+    font-size: 0.9em;
+}
+
+.evo-Title {
+    margin-bottom: 10px;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(71, 85, 105);
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.evolucionesDiv {
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    justify-content:center;
+    margin-top:10px;
+}
+
+.evolucionesDiv > h3 {
+    flex: 0 0 100%;
+    text-align:center;
+    margin:0 0 8px;
+    font-size:1.2em;
+}
+
+.evo-card {
+    /* TARJETA EVOLUCIÓN: Gris intermedio */
+    background: rgb(51, 65, 85);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 100px;
+    border: 1px solid rgb(71, 85, 105);
+    transition: transform 0.2s;
+}
+
